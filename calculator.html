@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Calculator</title>
+	<style type="text/css">
+	*\{
+		padding:0;
+		margin:0;
+		box-sizing: border-box;
+	}
+	   
+	  body {
+            font-family: 'Arial', sans-serif;
+            background-color: #E8E8E8;
+
+        }
+
+        h1 {
+            padding-top: 30px;
+            text-align: center;
+        }
+          input {
+            width:250px;
+            padding: 15px;
+            margin-top: 20px;
+            margin-left: 35px;
+            font-size: 20px;
+            border-radius: 8px;
+            border: gray;
+            background-color: #DCDCDC;
+           box-shadow: 2px 4px 1px 5px #888897;
+        }
+        input:hover{
+            background-color:white;
+        }
+          table {
+            width: 100%;
+
+            
+        }
+
+        td {
+            width: 25%;
+            text-align: center;
+           margin-top: 10px;
+
+            
+        }
+
+        button {
+            width: 56px;
+            padding-top: 10px;
+            font-size: 16px;
+            border-radius: 4px;
+            background-color:  #C8C8C8;
+            box-shadow: 10px 4px 8px 5px #888888;
+            margin-top: 18px;
+        }
+
+        button:hover {
+           background-color:white; 
+        }
+         #main-section{
+                background-color:white;
+                border-width:2px;
+             
+                width:360px;
+                height:324px;
+                margin-left: 470px;
+                border-radius: 20px;
+                 box-shadow: 10px 4px 8px 5px #888888;
+            }
+	</style>
+</head>
+<body>
+	<h1> Calculator </h1>
+	<div id="main-section">
+		<input type="text" id="field">
+		<table>
+			<tr>
+				<td>
+			     <button id="seven" onclick="
+			     var seven=document.getElementById('seven')
+			     field.value+=seven.innerHTML
+                  ">7</button>
+				</td>
+				<td>
+			     <button  id="eight" onclick="
+			     var eight=document.getElementById('eight')
+			     field.value+=eight.innerHTML
+                  ">8</button>
+				</td>
+				<td>
+			     <button id="nine" onclick="
+			     var nine=document.getElementById('nine')
+			     field.value+=nine.innerHTML
+                  ">9</button>
+				</td>
+				<td>
+			     <button id="multiply" onclick="
+			     var multiply=document.getElementById('multiply')
+			     field.value+=multiply.innerHTML
+			    
+                  ">*</button>
+				</td>
+			</tr>
+			<tr>
+				<td>
+			     <button id="four" onclick="
+			     var four=document.getElementById('four')
+			     field.value+=four.innerHTML
+                  ">4</button>
+				</td>
+				<td>
+			     <button id="five" onclick="
+			     var five=document.getElementById('five')
+			     field.value+=five.innerHTML
+                  ">5</button>
+				</td>
+				<td>
+			     <button id="six" onclick="
+			     var six=document.getElementById('six')
+			     field.value+=six.innerHTML
+                  ">6</button>
+				</td>
+				<td>
+			     <button button id="divide" onclick="
+			     var divide=document.getElementById('divide')
+			     field.value+=divide.innerHTML
+                  ">/</button>
+				</td>
+			</tr>
+			  <tr>
+                <td><button id="one" 
+                onclick="var one=document.getElementById('one')
+                  field.value+=one.innerHTML">1</button></td>
+                <td><button id="two" 
+                onclick="var two=document.getElementById('two')
+                  field.value+=two.innerHTML">2</button></td>
+                <td><button id="three" 
+                onclick="var three=document.getElementById('three')
+                  field.value+=three.innerHTML">3</button></td>
+                <td><button id="add" 
+                onclick="var add=document.getElementById('add')
+                  field.value+=add.innerHTML">+</button></td>
+            </tr>
+            <tr>
+                <td><button button id="zero" 
+                onclick="var zero=document.getElementById('zero')
+                  field.value+=zero.innerHTML">0</button></td>
+                <td><button button id="subtract" 
+                onclick="var subtract=document.getElementById('subtract')
+                  field.value+=subtract.innerHTML">-</button></td>
+                <td><button button id="equal" 
+                onclick="var equal=document.getElementById('field')
+                 
+                     var result=eval(field.value)
+			     field.value=result
+
+                  ">=</button></td>
+                  <td><button id="dot" 
+                onclick="var dot=document.getElementById('dot')
+                  field.value+=dot.innerHTML">.</button></td>
+            </tr>
+
+
+		</table>
+	</div>
+
+
+</body>
+</html>
